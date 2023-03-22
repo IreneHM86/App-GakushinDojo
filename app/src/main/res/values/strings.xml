@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Proyecto_final</string>
+    <string name="invalid_mail">Introduzca un mail válido</string>
+    <string name="invalid_password">Introduzca un password mayor a 6 dígitos</string>
+    <string name="user_display_picture" />
+    <string name="loading" />
+    <string name="name" />
+    <string name="email" />
+    <string name="dob" />
+    <string name="mobile" />
+    <string name="registered_user_since" />
+</resources>

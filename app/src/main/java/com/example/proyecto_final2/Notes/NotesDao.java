@@ -1,0 +1,26 @@
+package com.example.proyecto_final2.Notes;
+
+
+import androidx.lifecycle.LiveData;
+import androidx.room.Insert;
+import androidx.room.Query;
+import androidx.room.Update;
+
+import java.util.List;
+
+//Nos permite suministrar una interfaz común entre la aplicación y la base de datos.
+@androidx.room.Dao
+public interface NotesDao {
+
+    @Query("SELECT * FROM Notes_Database")
+    LiveData<List<Notes>> getallNotes();
+
+    @Insert
+    void insertNotes(Notes...notes);
+
+    @Query("DELETE FROM Notes_Database WHERE id=:id")
+    void deleteNotes(int id);
+
+    @Update
+    void updateNotes(Notes notes);
+}

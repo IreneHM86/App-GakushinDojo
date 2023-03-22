@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".RegisterActivity">
+
+
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="207dp"
+        android:layout_height="246dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:textColor="@color/ColorTres"
+        android:id="@+id/crear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Crear nueva cuenta"
+        android:textSize="25sp"
+        ></TextView>
+    <EditText
+        android:id="@+id/userRgstr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Introduzca el usuario">
+    </EditText>
+
+    <EditText
+        android:id="@+id/mailRgstr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Introduzca el mail">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/passRgstr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Introduzca el password"
+        android:inputType="textPassword"
+
+        android:minHeight="48dp">
+
+    </EditText>
+
+    <Button
+        android:textColor="@color/ColorTres"
+        android:id="@+id/RgstrBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5060B8"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="Crear"
+         />
+
+
+
+
+</LinearLayout>
